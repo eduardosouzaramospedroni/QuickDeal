@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EC2D2D">
+
+
+
+    <View
+        android:id="@+id/topRoundedBackground"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_top_bar"
+        android:layout_alignParentTop="true" />
+
+
+
+    <!-- Container arredondado para o mapa -->
+
+    <LinearLayout
+
+
+
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_search_bar"
+        android:elevation="6dp"
+        android:paddingHorizontal="12dp">
+
+        <!-- Ícone de lupa -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_search"
+            app:tint="@color/icon_gray"
+            android:contentDescription="@string/buscar" />
+
+        <!-- Campo de texto -->
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:hint="@string/digite_aqui"
+            android:imeOptions="actionSearch"
+            android:inputType="TODO"
+            android:paddingHorizontal="8dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            tools:ignore="TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <!-- Ícone de localização + texto da cidade -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_location"
+                app:tint="@color/icon_gray"
+                android:contentDescription="Localização"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textCidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/assis_sp"
+                android:textColor="#555555"
+                android:textSize="14sp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/searchContainer"
+        android:layout_above="@id/btnGetLocation"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingRegistered" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botão arredondado -->
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/bg_rounded_white"
+        android:drawableStart="@android:drawable/ic_menu_mylocation"
+        android:drawablePadding="8dp"
+
+        android:text="@string/ativar_geolocalizao"
+        android:textColor="#D32F2F"
+
+        />
+
+    <!-- Menu inferior arredondado -->
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_bottom_menu"
+        android:gravity="center"
+        android:weightSum="4"
+        android:elevation="6dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/tudo"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/pesquisa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo2"
+            app:srcCompat="@drawable/pesquisa" />
+
+        <ImageView
+            android:id="@+id/favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/perfil"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo1"
+            app:srcCompat="@drawable/perfil" />
+
+    </LinearLayout>
+
+</RelativeLayout>

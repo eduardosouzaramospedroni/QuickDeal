@@ -6,4 +6,6 @@
     <color name="yellow">#FFDD00</color>
     <color name="gray">#4A4A4A</color>
     <color name="transpa">#00000000</color>
+    <color name="icon_gray">#555555</color>
+    <color name="accent_red">#EC2D2D</color>
 </resources>

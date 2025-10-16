@@ -14,4 +14,12 @@
     <string name="txt_emailUser">Email de usuário:</string>
     <string name="txt_confirmar">Confirmar</string>
     <string name="txt_cancelar">Cancelar</string>
+    <string name="buscar">Buscar</string>
+    <string name="ativar_geolocalizao">Ativar geolocalização</string>
+    <string name="todo">TODO</string>
+    <string name="tudo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="digite_aqui">Digite aqui...</string>
+    <string name="assis_sp">Assis/SP</string>
 </resources>
