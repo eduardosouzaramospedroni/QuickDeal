@@ -5,6 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tela_senha3">
+    tools:context=".TelaSenha3">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
