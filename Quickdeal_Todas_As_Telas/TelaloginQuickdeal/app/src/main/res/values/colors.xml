@@ -8,4 +8,6 @@
     <color name="transpa">#00000000</color>
     <color name="icon_gray">#555555</color>
     <color name="accent_red">#EC2D2D</color>
+    <color name="pink">#C29B9B</color>
+    <color name="marrom">#4F3A3A</color>
 </resources>

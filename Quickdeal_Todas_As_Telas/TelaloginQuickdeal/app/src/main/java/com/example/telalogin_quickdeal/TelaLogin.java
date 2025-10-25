@@ -58,7 +58,7 @@ Button botao_esquecisenha;
         botaologar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mudartela = new Intent(TelaLogin.this, TelaPesquisa.class);
+                Intent mudartela = new Intent(TelaLogin.this, TelaInicial.class);
             startActivity(mudartela);
             }
         });

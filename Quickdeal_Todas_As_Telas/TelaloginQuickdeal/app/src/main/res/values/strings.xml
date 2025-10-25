@@ -22,4 +22,10 @@
     <string name="todo2">TODO</string>
     <string name="digite_aqui">Digite aqui...</string>
     <string name="assis_sp">Assis/SP</string>
+    <string name="navbar_inicio">Início</string>
+    <string name="navbar_restaurantes">Restaurantes</string>
+    <string name="navbar_diversos">Diversos</string>
+    <string name="navbar_ofertas">Ofertas</string>
+    <string name="str_texto1">Diversas ofertas!</string>
+    <string name="str_texto2">A nossa empresa se compromete com a satisfação do cliente!</string>
 </resources>
